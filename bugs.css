@@ -1,0 +1,163 @@
+body {
+  align-items: space-between;
+  background: #e6e6e6;
+  padding: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: auto;
+  max-width: 75rem;
+}
+
+header.main-header {
+  /*height: 100vh;*/
+  margin-bottom: 1rem;
+  background: white;
+}
+
+.nav-bar {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  padding: 0px 20px;
+  font-weight: 500;
+  font-family: serif, 'Times New Roman', Times ;
+  color: black;
+  font-size: large;
+}
+
+ul.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  width: 100%;
+}
+
+ul.container li {
+  list-style-type: none;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.logo {
+  flex-basis: 80%;
+  text-align: center;
+}
+
+.logo img {
+  height: 70px;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  background: white;
+}
+
+aside {
+  flex: 1;
+  padding-left: 2rem;
+  padding-right: 10px;
+}
+
+.articles {
+  flex: 3;
+}
+
+.articles-container {
+  columns: 2 200px;
+  column-gap: 0.5rem;
+}
+.articles > article {
+  width: 190px;
+  width: 100%;
+  background: whitesmoke;
+  color: black;
+  margin: 0 0.5rem 0.5rem 0;
+  display: inline-block;
+  height: max-content;
+  line-height: inherit;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  display:block;
+}
+
+.articles-container figure {
+  width: 90%;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-color: #d1d1d1;
+}
+
+.articles figcaption {
+  background-color: none;
+  color: black;
+  padding: 2px;
+  text-align: center;
+}
+
+aside figure{
+  margin: 0 100px 0 0;
+  padding: 0;
+}
+
+.about, .popular {
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-color: #d1d1d1;
+}
+
+footer {
+  height: 8em;
+  padding-top: 4em;
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  text-align: center;
+  color: white;
+}
+
+footer > * {
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  header,
+  nav ul {
+    flex-direction: column;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .articles-container{
+    columns: 1 200px;
+    column-gap: 1rem;
+  }
+
+  .articles {
+    flex: 1;
+  }
+
+  aside {
+    flex: 0 1 300px;
+  }
+}
