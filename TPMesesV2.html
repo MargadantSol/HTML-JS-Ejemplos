@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trabajo Practico Meses vol 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload ="dibujarAsincronico()">
+    <h1>Tabla de meses</h1>
+    </br>
+    <table id="table">
+        <tr>
+            <th width='200px'>Mes</th>
+            <th width='250px'>Dias</th>
+        </tr>
+    </table>
+    </br>
+    <aside>
+        <div class="botones1">
+            <button onclick="ClickNocturno()">Nocturno</button>
+            <button onclick="ClickDiurno()">Diurno</button>
+        </div>
+        <div class="botones2">
+            <button onclick="Click('darkslategrey','white','grey','black')">Nocturno</button>
+            <button onclick="Click('lightslategrey','black', 'palevioletred','pink')">Diurno</button>
+        </div>
+        <div class="botones3">
+            <button onclick="ClickSwitch(event)">Nocturno</button>
+            <!--modificar parametros de la funcion clickSwitch-->
+            <button onclick="ClickSwitch(event)">Diurno</button>
+            <button onclick="cambiarTextoBoton(event,'Evento2')">Evento1</button>
+        </div>
+    </aside>
+    <script src="script.js"></script>
+</body>
+
+</html>

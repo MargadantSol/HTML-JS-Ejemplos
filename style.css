@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+
+}
+table, td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th{
+    background-color:#ffcc99;
+}
+tr {
+    background-color: papayawhip;
+}
+button{
+    background-color: papayawhip;
+    border: 2px solid silver;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: solid;
+    display: inline-block;
+    margin: 4px 2px;
+    word-spacing: initial;
+    cursor: pointer;
+    font-size: initial;
+}
